@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:hk4_health/features/login/logic/cubit/login_cubit.dart';
+import 'package:hk4_health/features/login/ui/widgets/email_and_password.dart';
+import 'package:hk4_health/features/login/ui/widgets/login_bloc_listener.dart';
 
 import '../../../core/helpers/spacing.dart';
 import '../../../core/theming/styles.dart';
 import '../../../core/widgets/app_text_button.dart';
 import 'widgets/dont_have_account_text.dart';
-import 'widgets/email_and_password.dart';
 import 'widgets/terms_and_conditions_text.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -34,7 +36,7 @@ class LoginScreen extends StatelessWidget {
                 verticalSpace(36),
                 Column(
                   children: [
-                    // const EmailAndPassword(),
+                     const EmailAndPassword(),
                     verticalSpace(24),
                     Align(
                       alignment: AlignmentDirectional.centerEnd,
@@ -55,7 +57,7 @@ class LoginScreen extends StatelessWidget {
                     const TermsAndConditionsText(),
                     verticalSpace(60),
                     const DontHaveAccountText(),
-                    //  const LoginBlocListener(),
+                    const LoginBlocListener(),
                   ],
                 ),
               ],
@@ -67,8 +69,8 @@ class LoginScreen extends StatelessWidget {
   }
 
   void validateThenDoLogin(BuildContext context) {
-    // if (context.read<LoginCubit>().formKey.currentState!.validate()) {
-    //   context.read<LoginCubit>().emitLoginStates();
-    // }
+    if (context.read<LoginCubit>().formKey.currentState!.validate()) {
+      context.read<LoginCubit>().emitLoginStates();
+    }
   }
 }
