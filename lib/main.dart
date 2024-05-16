@@ -4,6 +4,8 @@ import 'package:hk4_health/core/di/dependency_injection.dart';
 import 'package:hk4_health/core/routing/app_router.dart';
 import 'package:hk4_health/hk4_health_app.dart';
 
+//dart run build_runner build  --delete-conflicting-outputs
+
 void main() async{
   setupGetIt();
   // To fix texts being hidden bug in flutter_screenutil in release mode.
