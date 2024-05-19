@@ -5,6 +5,7 @@ import 'package:hk4_health/core/routing/app_router.dart';
 import 'package:hk4_health/hk4_health_app.dart';
 
 //dart run build_runner build  --delete-conflicting-outputs
+// flutter run --release -t lib/main_production.dart --flavor Production
 
 void main() async{
   setupGetIt();
