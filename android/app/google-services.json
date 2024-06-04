@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "929302374728",
+    "project_id": "hk4-health",
+    "storage_bucket": "hk4-health.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:929302374728:android:ffa7205a3ec59a5e1deb7d",
+        "android_client_info": {
+          "package_name": "com.example.hk4_health"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCuqlpGI99TEm8lrMIv5qdUywKlJCnxOw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
