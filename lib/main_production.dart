@@ -6,6 +6,7 @@ import 'package:hk4_health/hk4_health_app.dart';
 
 //dart run build_runner build  --delete-conflicting-outputs
 // flutter run --release -t lib/main_production.dart --flavor Production
+// flutter build apk --flavor Production -t lib/main_production.dart 
 
 void main() async{
   setupGetIt();
