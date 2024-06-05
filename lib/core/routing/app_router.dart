@@ -32,7 +32,7 @@ class AppRouter {
             create: (context) => getIt<SignupCubit>(),
             child: const SignupScreen(),
           ),
-        );  
+        );
       case Routes.homeScreen:
         return MaterialPageRoute(
           builder: (_) => const HomeScreen(),
