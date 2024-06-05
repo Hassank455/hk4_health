@@ -6,7 +6,6 @@ import '../../../../core/theming/styles.dart';
 
 class DoctorsBlueContainer extends StatelessWidget {
   const DoctorsBlueContainer({super.key});
-  
 
   @override
   Widget build(BuildContext context) {
