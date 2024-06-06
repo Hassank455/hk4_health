@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_complete_project/features/home/data/models/specializations_response_model.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:hk4_health/features/home/data/models/specializations_response_model.dart';
 
 import '../../../../core/helpers/spacing.dart';
 import '../../../../core/theming/colors.dart';
