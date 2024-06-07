@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:hk4_health/core/helpers/constants.dart';
 import 'package:hk4_health/core/routing/app_router.dart';
 import 'package:hk4_health/core/routing/routes.dart';
 import 'package:hk4_health/core/theming/colors.dart';
@@ -24,7 +25,7 @@ final AppRouter appRouter;
           scaffoldBackgroundColor: Colors.white,
         ),
         debugShowCheckedModeBanner: false,
-        initialRoute: Routes.homeScreen,
+        initialRoute: isLoggedInUser ? Routes.homeScreen : Routes.loginScreen,
         onGenerateRoute: appRouter.generateRoute,
       )
     );
